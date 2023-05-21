@@ -17,6 +17,7 @@ folder = '1xOM8rrfKVyc3csfra75NkeJ2LDEElknu'
 st.set_page_config(
  page_icon="💧",
  layout="wide",
+ page_title = "Image Processing"
 )
 
 col1, col2, col3= st.columns(3, gap = "medium")
@@ -53,7 +54,7 @@ if image_file:
 
     with col1:   
         #Original Image
-        st.image(image, width=600, caption='Original Image')
+        st.image(image, width=600, caption='Original Image captured by Buoy')
         
         
     with col2:
