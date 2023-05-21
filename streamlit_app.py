@@ -108,10 +108,12 @@ if image_file:
         
 
     col11, col13, col14 = st.columns(3, gap = "large")
-    res = ":orange[Turbidity] = " + str(turbidity) + " :orange[Chlorophyll] = " + str(chlorophyll)
+    res = ":orange[Turbidity value] = " + str(round(turbidity,5)) 
+    res1 = " :orange[Chlorophyll value] = " + str(round(chlorophyll, 5))
 
     with col13:
         st.subheader(res)
+        st.subheader(res1)
         
 else:
     st.write("No images found in specified folder")
