@@ -45,12 +45,13 @@ with col2:
  # Download image data from Google Drive
 image_file = get_image_data()
 
-# Open image from local system using PIL
-image = Image.open(image_file)
 
 col1, col2= st.columns(2, gap = "large")
 
 if image_file:
+
+    # Open image from local system using PIL
+    image = Image.open(image_file)
 
     with col1:   
         #Original Image
@@ -116,7 +117,10 @@ if image_file:
         st.subheader(res1)
         
 else:
-    st.write("No images found in specified folder")
+    col21, col23, col24 = st.columns([1,2,1], gap = "medium")
+    with col23:
+        st.subheader(' :red[NO IMAGES FOUND IN SPECIFIED FOLDER..............!] ')
+        
 
 
 
