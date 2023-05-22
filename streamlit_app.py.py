@@ -109,8 +109,8 @@ if image_file:
         
 
     col11, col13, col14 = st.columns(3, gap = "large")
-    res = ":orange[Turbidity value] = " + str(round(turbidity,5)) 
-    res1 = " :orange[Chlorophyll value] = " + str(round(chlorophyll, 5))
+    res = ":orange[Turbidity] = " + str(round(turbidity,3)) + "ntu"
+    res1 = " :orange[Chlorophyll] = " + str(round(chlorophyll, 3)) + "mg/L"
 
     with col13:
         st.subheader(res)
